@@ -1,3 +1,7 @@
+body {
+  padding: 50px 0px 0px 0px;
+}
+
 .row-header {
   margin: 0px auto;
   padding: 0px auto;
@@ -11,7 +15,7 @@
 }
 
 .footer {
-  background-color: #a0def5;
+  background-color: #af92ee;
   margin: 0px auto;
   padding: 20px 0px 20px 0px;
 }
@@ -19,7 +23,7 @@
 .jumbotron {
   padding: 70px 30px 70px 30px;
   margin: 0px auto;
-  background: #a0def5;
+  background: #9d79e9;
   color: floralwhite;
 }
 
@@ -27,4 +31,8 @@
   font-size: 80%;
   margin: 0px;
   color: #0f0f0f;
+}
+
+.navbar-dark {
+  background-color: #512da8;
 }
