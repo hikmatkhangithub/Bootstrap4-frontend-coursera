@@ -111,6 +111,148 @@
           </div>
       </div>
     </div>
+    <!-- -------------------Assignment 3 modal -->
+    <div class="modal fade" id="reserveModal" role="dialog" >
+      <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Reserve a Table</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="form1" class="card-body">
+              <form>
+                <div class="form-group row">
+                  <div class="col-12 col-sm-2">
+                    <label for="numberOfGuest">Number of Guests</label>
+                  </div>
+                  <div class="col-12 col-sm-10">
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radioOptions"
+                        id="radio1"
+                        value="option1"
+                      />
+                      <label class="form-check-label" for="radio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radioOptions"
+                        id="radio2"
+                        value="option2"
+                      />
+                      <label class="form-check-label" for="radio2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radioOptions"
+                        id="radio3"
+                        value="option3"
+                      />
+                      <label class="form-check-label" for="radio3">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radioOptions"
+                        id="radio4"
+                        value="option4"
+                      />
+                      <label class="form-check-label" for="radio4">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radioOptions"
+                        id="radio5"
+                        value="option5"
+                      />
+                      <label class="form-check-label" for="radio5">5</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radioOptions"
+                        id="radio6"
+                        value="option6"
+                      />
+                      <label class="form-check-label" for="radio6">6</label>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="form-group row">
+                  <div class="col-12 col-sm-2 "><label for="section">Section</label></div>
+                  <div class="col-12 col-sm-10 ">
+                      <div class="btn-group " data-toggle="buttons" role="group">
+                        <div class=" custom-radio">
+                          <label class="btn btn-success " for="nonSmoking">
+                            <input
+                            class="custom-control-input "
+                            type="radio"
+                            name="smoking"
+                            id="nonSmoking"
+                            value="nonSmoking"
+                            checked
+                            >Non-Smoking</label>
+                        </div>
+                        <div class="custom-control custom-radio ">
+                         
+                          <label class="btn  btn-danger" for="smoking"> <input
+                            class="custom-control-input"
+                            type="radio"
+                            name="smoking"
+                            id="smoking"
+                            value="smoking"
+                            >Smoking</label>
+                        </div>
+                      </div>
+                    
+                </div>
+                </div>
+                <div class="form-check-inline row">
+                  <div class="col-12 col-sm-2 ">
+                    <label for="numberOfGuest">Date and Time</label>
+                  </div>
+
+                  <div class="col-12 col-sm-4 ">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Date"
+                    />
+                  </div>
+                  <div class="col-12 col-sm-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Time"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-12 offset-sm-2 align-center">
+                    <button class="btn btn-secondary mt-4" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary mt-4">Reserve</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="jumbotron">
       <div class="container">
         <div class="row row-header">
@@ -129,9 +271,8 @@
               </div>
                 <div class="col-12 col-sm-6 mt-2">
               <a
-                onClick='window.location="#form1"'
-                class="btn btn-warning " data-toggle="tooltip" data-html="true"
-                title="Or Call us at <br><strong>+823 564656544 </br></strong>" data-placement="bottom"
+                onClick=''
+                class="btn btn-warning " data-toggle="modal" data-target="#reserveModal" data-html="true"
                 
               >
                 Researve Table
@@ -153,7 +294,7 @@
                     <img class="d-block img-fluid"
                         src="img/uthappizza.png" alt="Uthappizza">
                     <div class="carousel-caption d-none d-md-block">
-                        <h2>Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">$4.99</span></h2>
+                        <h2>Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary badge-default">$4.99</span></h2>
                         <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
@@ -161,7 +302,7 @@
                   <img class="d-block img-fluid"
                       src="img/buffet.png" alt="buffet">
                   <div class="carousel-caption d-none d-md-block">
-                      <h2>Grang Buffet <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">$15.99</span></h2>
+                      <h2>Grand Buffet <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary badge-default">$15.99</span></h2>
                       <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
                   </div>
               </div>
@@ -185,6 +326,15 @@
         <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon"></span>
         </a>
+
+                <div class="btn-group" id="myCarouselButton">
+                  <button class="btn btn-danger" id="carousel-pause">
+                    <span class="fa fa-pause"></span>
+                  </button>
+                  <button class="btn btn-danger ml-1" id="carousel-play">
+                    <span class="fa fa-play"></span>
+                  </button>
+                </div>
         </div>
       </div>
          </div>
@@ -268,7 +418,7 @@
           </div>
         </div>
       </div>
-      <div class="row row-content">
+      <!-- <div class="row row-content">
         <div class="col-12 col-sm-8 offset-sm-2">
           <div class="card ">
             <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
@@ -371,7 +521,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <footer class="footer">
       <div class="container">
@@ -442,9 +592,16 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-      $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
+     $(document).ready(function(){
+       $('#mycarousel').carousel({interval:2000})
+       $('#carousel-pause').click(function(){
+          $('#mycarousel').carousel('pause');
+       });
+      $('#carousel-play').click(function(){
+        $('#mycarousel').carousel('cycle');
       });
+       
+     })
     </script>
   </body>
 </html>

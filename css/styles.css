@@ -63,3 +63,9 @@ body {
   bottom: 60px;
   left: 38%;
 }
+#myCarouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 2px;
+}
